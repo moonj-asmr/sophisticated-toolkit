@@ -120,10 +120,20 @@ els.form.addEventListener("submit", (e) => {
   els.note.hidden = false;
 });
 
+
+function shuffle(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
 async function init() {
   const res = await fetch("data/tools.json");
   if (!res.ok) throw new Error("Failed to load tools.json");
-  state.tools = await res.json();
+  state.tools = shuffle(await res.json());
   renderFilters();
   renderTools();
 }
