@@ -1,0 +1,13 @@
+{
+  "name": "sophisticated-toolkit",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Fewer, better tools. The essentials.",
+  "scripts": {
+    "start": "npx --yes serve -s . -l ${PORT:-3000}",
+    "dev": "npx --yes serve -s . -l 3000"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
