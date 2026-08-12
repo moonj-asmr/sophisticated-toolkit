@@ -82,7 +82,7 @@ function renderTools() {
     article.className = "card";
     article.innerHTML = `
       <div class="card-image">
-        <img src="${tool.image}" alt="${escapeHtml(tool.brand)} ${escapeHtml(tool.name)}" loading="lazy" width="1100" height="825" />
+        <img src="${tool.image}" alt="${escapeHtml(tool.brand)} ${escapeHtml(tool.name)}" loading="lazy" />
       </div>
       <div class="card-body">
         <div class="card-meta">
