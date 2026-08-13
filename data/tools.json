@@ -190,5 +190,18 @@
     "blurb": "A light-assembly glove with a 15-gauge nylon liner and a foam nitrile palm, for handling and grip on dry or slightly oily work. Breathable enough to keep on, with the dexterity a house actually needs, and no latex.",
     "image": "images/Ansell_HyFlex_11-800_studio_final.jpg",
     "buyUrl": "https://www.amazon.com/s?k=Ansell+HyFlex+11-800"
+  },
+  {
+    "id": "bessey-ehk-trigger-clamp",
+    "name": "EHK Trigger Clamp",
+    "brand": "Bessey",
+    "origin": "Germany",
+    "tags": [
+      "Gripping"
+    ],
+    "essential": false,
+    "blurb": "A one-handed trigger clamp, the third hand for glue-ups, holding work, and assembly. It clamps or spreads, and the pads keep the bar from marking the piece.",
+    "image": "images/Bessey_EHK_Trigger_Clamp_studio_final.jpg",
+    "buyUrl": "https://www.amazon.com/s?k=Bessey+EHK+trigger+clamp"
   }
 ]
