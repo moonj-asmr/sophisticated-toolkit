@@ -151,5 +151,18 @@
     "blurb": "A pocket laser for length, width, and the diagonal that is otherwise a guess. Leica’s optics and Bluetooth keep the reading stable enough to work from, for hangings, furniture, and floor plans. It sits next to the tape.",
     "image": "images/Leica_DISTO_D2_studio_final.jpg",
     "buyUrl": "https://www.amazon.com/s?k=Leica+DISTO+D2"
+  },
+  {
+    "id": "petzl-actik-core",
+    "name": "ACTIK CORE",
+    "brand": "Petzl",
+    "origin": "France",
+    "tags": [
+      "Light & Safety"
+    ],
+    "essential": false,
+    "blurb": "A rechargeable headlamp that leaves both hands free for wiring, attics, and evening work. Petzl’s beam is even, the CORE battery recharges instead of eating disposables, and the strap stays put.",
+    "image": "images/Petzl_ACTIK_CORE_studio_final.jpg",
+    "buyUrl": "https://www.amazon.com/s?k=Petzl+ACTIK+CORE"
   }
 ]
