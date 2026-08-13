@@ -71,7 +71,7 @@ a { color: inherit; }
 }
 
 .site-title img {
-  width: min(16rem, 62vw);
+  width: min(20.8rem, 80vw);
   height: auto;
   margin: 0 auto;
 }
@@ -84,11 +84,11 @@ a { color: inherit; }
 }
 
 .manifesto {
-  margin: 1.75rem auto 0;
-  max-width: 36rem;
-  font-size: 0.975rem;
+  margin: 1.1rem auto 0;
+  max-width: 20.8rem;
+  font-size: 0.9rem;
   color: var(--muted);
-  line-height: 1.7;
+  line-height: 1.65;
 }
 
 .filters {
