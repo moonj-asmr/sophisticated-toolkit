@@ -70,6 +70,12 @@ a { color: inherit; }
   line-height: 1.1;
 }
 
+.site-title img {
+  width: min(22rem, 86vw);
+  height: auto;
+  margin: 0 auto;
+}
+
 .tagline {
   margin: 1rem 0 0;
   font-size: 1.125rem;
