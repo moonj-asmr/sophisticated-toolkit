@@ -71,7 +71,7 @@ a { color: inherit; }
 }
 
 .site-title img {
-  width: min(22rem, 86vw);
+  width: min(36rem, 92vw);
   height: auto;
   margin: 0 auto;
 }
