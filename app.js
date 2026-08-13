@@ -12,7 +12,7 @@ const FILTERS = [
 
 const state = {
   tools: [],
-  active: new Set(["All"]),
+  active: "All",
 };
 
 const els = {
@@ -32,40 +32,25 @@ function renderFilters() {
   FILTERS.forEach((label) => {
     const btn = document.createElement("button");
     btn.type = "button";
-    btn.className = "pill" + (state.active.has(label) ? " is-active" : "");
+    btn.className = "pill" + (state.active === label ? " is-active" : "");
     btn.textContent = label;
-    btn.setAttribute("aria-pressed", state.active.has(label) ? "true" : "false");
+    btn.setAttribute("aria-pressed", state.active === label ? "true" : "false");
     btn.addEventListener("click", () => toggleFilter(label));
     els.filters.appendChild(btn);
   });
 }
 
 function toggleFilter(label) {
-  if (label === "All") {
-    state.active = new Set(["All"]);
-  } else {
-    state.active.delete("All");
-    if (state.active.has(label)) {
-      state.active.delete(label);
-    } else {
-      state.active.add(label);
-    }
-    if (state.active.size === 0) {
-      state.active.add("All");
-    }
-  }
+  state.active = label === state.active ? "All" : label;
   renderFilters();
   renderTools();
 }
 
 function matches(tool) {
-  if (state.active.has("All")) return true;
+  if (state.active === "All") return true;
   const tags = new Set(tool.tags || []);
   if (tool.essential) tags.add("Essentials");
-  for (const f of state.active) {
-    if (tags.has(f)) return true;
-  }
-  return false;
+  return tags.has(state.active);
 }
 
 function renderTools() {
