@@ -137,5 +137,19 @@
     "blurb": "German pliers, built so the jaws meet cleanly and the handles hold under a firm grip. A tight Knipex set covers gripping, cutting, and adjustment for plumbing fixtures, fasteners, wire, and the odd stuck nut.",
     "image": "images/Knipex_Pliers_Set_studio_final.jpg",
     "buyUrl": "https://www.amazon.com/s?k=Knipex+Pliers+Set"
+  },
+  {
+    "id": "leica-disto-d2",
+    "name": "DISTO D2",
+    "brand": "Leica",
+    "origin": "Switzerland",
+    "tags": [
+      "Essentials",
+      "Measuring & Layout"
+    ],
+    "essential": true,
+    "blurb": "A pocket laser for length, width, and the diagonal that is otherwise a guess. Leica’s optics and Bluetooth keep the reading stable enough to work from, for hangings, furniture, and floor plans. It sits next to the tape.",
+    "image": "images/Leica_DISTO_D2_studio_final.jpg",
+    "buyUrl": "https://www.amazon.com/s?k=Leica+DISTO+D2"
   }
 ]
