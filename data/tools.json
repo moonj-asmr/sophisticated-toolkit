@@ -177,5 +177,18 @@
     "blurb": "A profile gauge copies a shape that is hard to measure: baseboard, tile, a pipe in a wall, so the next piece can be marked cleanly. Shinwa’s stainless pins are finer than the plastic versions, so the curve stays accurate.",
     "image": "images/Shinwa_Contour_Gauge_studio_final.jpg",
     "buyUrl": "https://www.amazon.com/s?k=Shinwa+contour+gauge"
+  },
+  {
+    "id": "ansell-hyflex-11-800",
+    "name": "HyFlex 11-800",
+    "brand": "Ansell",
+    "origin": "Sri Lanka",
+    "tags": [
+      "Light & Safety"
+    ],
+    "essential": false,
+    "blurb": "A light-assembly glove with a 15-gauge nylon liner and a foam nitrile palm, for handling and grip on dry or slightly oily work. Breathable enough to keep on, with the dexterity a house actually needs, and no latex.",
+    "image": "images/Ansell_HyFlex_11-800_studio_final.jpg",
+    "buyUrl": "https://www.amazon.com/s?k=Ansell+HyFlex+11-800"
   }
 ]
