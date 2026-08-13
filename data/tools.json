@@ -164,5 +164,18 @@
     "blurb": "A rechargeable headlamp that leaves both hands free for wiring, attics, and evening work. Petzl’s beam is even, the CORE battery recharges instead of eating disposables, and the strap stays put.",
     "image": "images/Petzl_ACTIK_CORE_studio_final.jpg",
     "buyUrl": "https://www.amazon.com/s?k=Petzl+ACTIK+CORE"
+  },
+  {
+    "id": "shinwa-contour-gauge",
+    "name": "Contour Profile Gauge",
+    "brand": "Shinwa",
+    "origin": "Japan",
+    "tags": [
+      "Measuring & Layout"
+    ],
+    "essential": false,
+    "blurb": "A profile gauge copies a shape that is hard to measure: baseboard, tile, a pipe in a wall, so the next piece can be marked cleanly. Shinwa’s stainless pins are finer than the plastic versions, so the curve stays accurate.",
+    "image": "images/Shinwa_Contour_Gauge_studio_final.jpg",
+    "buyUrl": "https://www.amazon.com/s?k=Shinwa+contour+gauge"
   }
 ]
