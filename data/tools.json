@@ -4,9 +4,13 @@
     "name": "MultiMaster",
     "brand": "Fein",
     "origin": "Germany",
-    "tags": ["Essentials", "Power", "Cutting"],
+    "tags": [
+      "Essentials",
+      "Power",
+      "Cutting"
+    ],
     "essential": true,
-    "blurb": "The oscillating tool that invented the category—and still sets the standard. Fein’s MultiMaster turns one compact body into a saw, scraper, sander, and detail cutter for the jobs a circular saw can’t reach. The German build is dense and calm in the hand; vibration stays controlled so you work longer without fatigue. If you keep only one specialty power tool for home work, this is the one.",
+    "blurb": "The oscillating tool that invented the category, and still the standard. One body: saw, scraper, sander, detail cutter, for jobs a circular saw can’t reach. Dense, vibration kept in check. If the kit has one specialty power tool, this is it.",
     "image": "images/Fein_MultiMaster_studio_final.jpg",
     "buyUrl": "https://www.amazon.com/s?k=Fein+MultiMaster"
   },
@@ -15,9 +19,12 @@
     "name": "CXS 18 Compact Drill",
     "brand": "Festool",
     "origin": "Germany",
-    "tags": ["Essentials", "Power"],
+    "tags": [
+      "Essentials",
+      "Power"
+    ],
     "essential": true,
-    "blurb": "A cordless drill you actually want to pick up. The CXS 18 is short, balanced, and refined—less workshop brute, more everyday instrument. Festool’s clutch and electronics make clean holes and careful seating the default, not a struggle. It belongs in a small kit because it covers hangings, furniture, and light assembly without the bulk of a full-size driver.",
+    "blurb": "A compact cordless drill. Short and balanced, for hangings, furniture, and light assembly. Festool’s clutch and electronics make clean holes and careful seating the default. The work a house needs, without the bulk of a full-size driver.",
     "image": "images/Festool_CXS_18_studio_final.jpg",
     "buyUrl": "https://www.amazon.com/s?k=Festool+CXS+18"
   },
@@ -26,9 +33,12 @@
     "name": "E20C Claw Hammer",
     "brand": "Estwing",
     "origin": "USA",
-    "tags": ["Essentials", "Hand Tools"],
+    "tags": [
+      "Essentials",
+      "Hand Tools"
+    ],
     "essential": true,
-    "blurb": "One-piece forged steel, leather grip, and a balance that feels settled on the first swing. Estwing’s E20C is the classic American claw hammer—buy it once and stop thinking about hammers. The solid construction shrugs off years of picture hanging, trim, and light framing. It’s the tool that makes lesser hammers feel like toys.",
+    "blurb": "One-piece forged steel, leather grip, balance that settles on the first swing. Picture hanging, trim, light framing. This is the hammer.",
     "image": "images/Estwing_E20C_Hammer_studio_final.jpg",
     "buyUrl": "https://www.amazon.com/s?k=Estwing+E20C"
   },
@@ -37,9 +47,11 @@
     "name": "DFH12 Dead Blow Mallet",
     "brand": "Estwing",
     "origin": "USA",
-    "tags": ["Hand Tools"],
+    "tags": [
+      "Hand Tools"
+    ],
     "essential": false,
-    "blurb": "A dead-blow mallet for when you need force without scars. Shot-filled head delivers a heavy, non-rebounding strike—ideal for seating joints, persuading stuck parts, and assembly work where a steel hammer would mark the surface. Estwing’s build is honest and durable; it earns a place beside the claw hammer as the “finish-friendly” hitter.",
+    "blurb": "A dead-blow mallet for force without scars. Shot-filled head, no rebound. For seating joints, stuck parts, and assembly where a steel hammer would mark the work. It sits next to the claw hammer.",
     "image": "images/Estwing_DFH12_Mallet_studio_final.jpg",
     "buyUrl": "https://www.amazon.com/s?k=Estwing+DFH12"
   },
@@ -48,9 +60,12 @@
     "name": "SwissGrip Screwdriver Set",
     "brand": "PB Swiss Tools",
     "origin": "Switzerland",
-    "tags": ["Essentials", "Hand Tools"],
+    "tags": [
+      "Essentials",
+      "Hand Tools"
+    ],
     "essential": true,
-    "blurb": "Swiss-made drivers with that unmistakable PB feel—precise tips, confident torsion, and grips that stay planted. A proper SwissGrip set covers the fasteners you actually meet around the house without the cheap-steel cam-out of big-box kits. This is buy-once hardware: the kind you hand down, not replace every few years.",
+    "blurb": "Swiss-made drivers. Precise tips, real torsion, grips that stay planted. Covers the fasteners a house actually has. The set that stays in the drawer.",
     "image": "images/PB_Swiss_SwissGrip_Set_studio_final.jpg",
     "buyUrl": "https://www.amazon.com/s?k=PB+Swiss+SwissGrip"
   },
@@ -59,9 +74,11 @@
     "name": "ESD Micro Bit Set",
     "brand": "Wiha",
     "origin": "Germany",
-    "tags": ["Hand Tools"],
+    "tags": [
+      "Hand Tools"
+    ],
     "essential": false,
-    "blurb": "Electronics, eyeglasses, small appliances, and modern gadgets all ask for bits your full-size drivers can’t touch. Wiha’s ESD micro set is organized, precise, and built to a standard that hobby kits never reach. Keep it for the fine work—then put it away knowing the tips will still be true next season.",
+    "blurb": "Bits for electronics, eyeglasses, small appliances, and the fasteners full-size drivers can’t reach. Organized, precise, ESD-safe. For the fine work. Then put it away.",
     "image": "images/Wiha_ESD_Micro_Bit_Set_studio_final.jpg",
     "buyUrl": "https://www.amazon.com/s?k=Wiha+ESD+Micro+Bit+Set"
   },
@@ -70,9 +87,12 @@
     "name": "Type 81S Torpedo Level",
     "brand": "Stabila",
     "origin": "Germany",
-    "tags": ["Essentials", "Measuring & Layout"],
+    "tags": [
+      "Essentials",
+      "Measuring & Layout"
+    ],
     "essential": true,
-    "blurb": "A pocket torpedo that reads true and survives real use. Stabila’s vials are legendary for a reason—clear, stable, and trustworthy for hangings, shelves, and appliance leveling. The compact die-cast body lives in a drawer or bag without apology. Once you’ve used a proper level, the cheap ones feel like guessing.",
+    "blurb": "A pocket torpedo that reads true. Clear vials, die-cast body. Hangings, shelves, appliance leveling. This is the level.",
     "image": "images/Stabila_Type_81S_Torpedo_studio_final.jpg",
     "buyUrl": "https://www.amazon.com/s?k=Stabila+Type+81S"
   },
@@ -81,9 +101,11 @@
     "name": "Self-Centering 25' Tape",
     "brand": "Lufkin",
     "origin": "USA",
-    "tags": ["Measuring & Layout"],
+    "tags": [
+      "Measuring & Layout"
+    ],
     "essential": false,
-    "blurb": "A 25-foot tape with self-centering scales that cut the mental math when locating midpoints. Lufkin’s blade and case feel purposeful—sturdy standout, clean printing, and a hook that behaves. Measuring is the quiet foundation of every good install; this is the tape that makes that foundation feel intentional.",
+    "blurb": "A 25-foot tape with self-centering scales, so a midpoint is not extra math. Sturdy blade, clean printing, a hook that behaves. Measuring is the first step of a decent install.",
     "image": "images/Lufkin_Self_Centering_25_studio_final.jpg",
     "buyUrl": "https://www.amazon.com/s?k=Lufkin+Self+Centering+25"
   },
@@ -92,9 +114,12 @@
     "name": "ST-350 Toolbox",
     "brand": "Trusco",
     "origin": "Japan",
-    "tags": ["Essentials", "Storage"],
+    "tags": [
+      "Essentials",
+      "Storage"
+    ],
     "essential": true,
-    "blurb": "Japanese steel toolbox culture at its most handsome. The Trusco ST-350 is compact, rigid, and finished like an object you’re happy to leave out—not hide in a garage. It holds a small kit without becoming a junk drawer. Storage is part of the toolkit: order is how good tools stay good.",
+    "blurb": "A compact steel toolbox. Rigid, well finished, small enough to leave out. Holds a kit without becoming a junk drawer. Storage is how good tools stay good.",
     "image": "images/Trusco_ST350_Toolbox_studio_final.jpg",
     "buyUrl": "https://www.amazon.com/s?k=Trusco+ST-350"
   },
@@ -103,9 +128,13 @@
     "name": "Pliers Set",
     "brand": "Knipex",
     "origin": "Germany",
-    "tags": ["Essentials", "Hand Tools", "Gripping"],
+    "tags": [
+      "Essentials",
+      "Hand Tools",
+      "Gripping"
+    ],
     "essential": true,
-    "blurb": "German pliers that make every other pair feel soft and imprecise. A tight Knipex set covers gripping, cutting, and adjustment with jaws that meet cleanly and handles that reward a firm hold. These are the tools you reach for instinctively—plumbing fixtures, fasteners, wire, and the odd stuck nut. Fewer pairs, infinitely better.",
+    "blurb": "German pliers. Gripping, cutting, adjustment. Jaws that meet cleanly, handles that hold. Fixtures, fasteners, wire, the stuck nut. Fewer pairs. Better ones.",
     "image": "images/Knipex_Pliers_Set_studio_final.jpg",
     "buyUrl": "https://www.amazon.com/s?k=Knipex+Pliers+Set"
   }
