@@ -203,5 +203,44 @@
     "blurb": "A one-handed trigger clamp, the third hand for glue-ups, holding work, and assembly. It clamps or spreads, and the pads keep the bar from marking the piece.",
     "image": "images/Bessey_EHK_Trigger_Clamp_studio_final.jpg",
     "buyUrl": "https://www.amazon.com/s?k=Bessey+EHK+trigger+clamp"
+  },
+  {
+    "id": "olfa-26b",
+    "name": "S-type 26B Craft Knife",
+    "brand": "OLFA",
+    "origin": "Japan",
+    "tags": [
+      "Cutting"
+    ],
+    "essential": false,
+    "blurb": "A pencil-length craft knife with a 1mm single-bevel blade, slide-adjustable, for paper, veneer, scoring, and light whittling. The blade is reversible, and a brass screw locks it.",
+    "image": "images/OLFA_Craft_Knife_26B_studio_final.jpg",
+    "buyUrl": "https://www.amazon.com/dp/B000TGNZ8O"
+  },
+  {
+    "id": "cwt-herring-blade",
+    "name": "Herring Blade",
+    "brand": "CW&T",
+    "origin": "USA",
+    "tags": [
+      "Cutting"
+    ],
+    "essential": false,
+    "blurb": "A flat utility knife with a magnetic latch and no moving parts. It takes standard 18mm snap blades and sits thin enough for a pocket.",
+    "image": "images/CWT_Herring_Blade_studio_final.jpg",
+    "buyUrl": "https://cwandt.com/products/herring-blade"
+  },
+  {
+    "id": "mitutoyo-500-196-32",
+    "name": "500-196-32 Digimatic Caliper",
+    "brand": "Mitutoyo",
+    "origin": "Japan",
+    "tags": [
+      "Measuring & Layout"
+    ],
+    "essential": false,
+    "blurb": "A 6-inch digital caliper for outside, inside, depth, and step. It wakes on the true reading after power-off, so there is no re-zeroing, at a resolution a tape cannot do.",
+    "image": "images/Mitutoyo_500-196-32_studio_final.jpg",
+    "buyUrl": "https://www.amazon.com/dp/B0GJ7BXS4W"
   }
 ]
