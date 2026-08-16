@@ -3,11 +3,6 @@ const FILTERS = [
   "Essentials",
   "Power",
   "Hand Tools",
-  "Measuring & Layout",
-  "Cutting",
-  "Gripping",
-  "Storage",
-  "Light & Safety",
 ];
 
 const state = {
@@ -25,42 +20,57 @@ const els = {
   note: document.getElementById("signup-note"),
 };
 
-els.year.textContent = String(new Date().getFullYear());
+if (els.year) els.year.textContent = String(new Date().getFullYear());
+
+function currentFilter() {
+  return FILTERS.includes(state.active) ? state.active : "All";
+}
 
 function renderFilters() {
+  if (!els.filters) return;
   els.filters.innerHTML = "";
+  const active = currentFilter();
   FILTERS.forEach((label) => {
     const btn = document.createElement("button");
     btn.type = "button";
-    btn.className = "pill" + (state.active === label ? " is-active" : "");
+    btn.className = "pill" + (active === label ? " is-active" : "");
     btn.textContent = label;
-    btn.setAttribute("aria-pressed", state.active === label ? "true" : "false");
+    btn.setAttribute("aria-pressed", active === label ? "true" : "false");
     btn.addEventListener("click", () => toggleFilter(label));
     els.filters.appendChild(btn);
   });
 }
 
 function toggleFilter(label) {
-  state.active = label === state.active ? "All" : label;
+  state.active = label === currentFilter() ? "All" : label;
   renderFilters();
   renderTools();
 }
 
 function matches(tool) {
-  if (state.active === "All") return true;
+  const active = currentFilter();
+  if (active === "All") return true;
   const tags = new Set(tool.tags || []);
   if (tool.essential) tags.add("Essentials");
-  return tags.has(state.active);
+  return tags.has(active);
 }
 
 function renderTools() {
+  if (!els.grid) return;
+  if (!state.tools.length) return;
+
   const visible = state.tools.filter(matches);
   els.grid.innerHTML = "";
-  els.count.textContent =
-    visible.length === state.tools.length
-      ? `${visible.length} tools`
-      : `${visible.length} of ${state.tools.length} tools`;
-  els.empty.hidden = visible.length > 0;
+  if (els.count) {
+    els.count.textContent =
+      visible.length === state.tools.length
+        ? `${visible.length} tools`
+        : `${visible.length} of ${state.tools.length} tools`;
+  }
+  if (els.empty) {
+    els.empty.hidden = visible.length > 0;
+    els.empty.textContent = visible.length > 0 ? "" : "No tools match these filters.";
+  }
 
   visible.forEach((tool) => {
     const article = document.createElement("article");
@@ -99,31 +109,61 @@ function escapeAttr(str) {
   return escapeHtml(str).replace(/'/g, "&#39;");
 }
 
-els.form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  els.form.hidden = true;
-  els.note.hidden = false;
-});
+if (els.form) {
+  els.form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    els.form.hidden = true;
+    if (els.note) els.note.hidden = false;
+  });
+}
 
-
-function shuffle(arr) {
-  const a = arr.slice();
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
+function readEmbeddedTools() {
+  const node = document.getElementById("tools-data");
+  if (!node) return null;
+  try {
+    const data = JSON.parse(node.textContent);
+    return Array.isArray(data) && data.length ? data : null;
+  } catch {
+    return null;
   }
-  return a;
+}
+
+function applyTools(tools) {
+  state.tools = tools;
+  if (!FILTERS.includes(state.active)) state.active = "All";
+  renderFilters();
+  const alreadyPainted =
+    currentFilter() === "All" && els.grid && els.grid.querySelectorAll(".card").length === tools.length;
+  if (alreadyPainted) {
+    if (els.count) els.count.textContent = `${tools.length} tools`;
+    if (els.empty) {
+      els.empty.hidden = true;
+      els.empty.textContent = "";
+    }
+    return;
+  }
+  renderTools();
 }
 
 async function init() {
+  const embedded = readEmbeddedTools();
+  if (embedded) {
+    applyTools(embedded);
+    return;
+  }
   const res = await fetch("data/tools.json");
   if (!res.ok) throw new Error("Failed to load tools.json");
-  state.tools = shuffle(await res.json());
-  renderFilters();
-  renderTools();
+  const data = await res.json();
+  if (!Array.isArray(data) || !data.length) throw new Error("Empty catalog");
+  applyTools(data);
 }
 
 init().catch((err) => {
   console.error(err);
-  els.count.textContent = "Unable to load catalog.";
+  const hasCards = els.grid && els.grid.querySelector(".card");
+  if (!hasCards && els.count) els.count.textContent = "Unable to load catalog.";
+  if (!hasCards && els.empty) {
+    els.empty.hidden = true;
+    els.empty.textContent = "";
+  }
 });
