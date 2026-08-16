@@ -4,8 +4,8 @@
   "private": true,
   "description": "Fewer, better tools. The essentials.",
   "scripts": {
-    "start": "npx --yes serve -s . -l ${PORT:-3000}",
-    "dev": "npx --yes serve -s . -l 3000"
+    "start": "npx --yes serve . -l ${PORT:-3000}",
+    "dev": "npx --yes serve . -l 3000"
   },
   "engines": {
     "node": ">=18"
