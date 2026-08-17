@@ -1,1 +1,246 @@
-PLACEHOLDER_TOOLS
+[
+  {
+    "id": "fein-multimaster",
+    "name": "MultiMaster",
+    "brand": "Fein",
+    "origin": "Germany",
+    "tags": [
+      "Essentials",
+      "Power",
+      "Cutting"
+    ],
+    "essential": true,
+    "blurb": "The oscillating tool that invented the category, and still the one that sets the standard. Fein’s MultiMaster turns one compact body into a saw, scraper, sander, and detail cutter for the jobs a circular saw can’t reach. The German build is dense, and vibration stays controlled so the work can go longer without fatigue. If the kit has only one specialty power tool, this is the one.",
+    "image": "images/Fein_MultiMaster_studio_final.jpg",
+    "buyUrl": "https://www.amazon.com/s?k=Fein+MultiMaster&tag=myhousetools-20"
+  },
+  {
+    "id": "festool-cxs-18",
+    "name": "CXS 18 Compact Drill",
+    "brand": "Festool",
+    "origin": "Germany",
+    "tags": [
+      "Essentials",
+      "Power"
+    ],
+    "essential": true,
+    "blurb": "A compact cordless drill, short and balanced, made for hangings, furniture, and light assembly rather than the bulk of a full-size driver. Festool’s clutch and electronics make clean holes and careful seating the default, not a struggle.",
+    "image": "images/Festool_CXS_18_studio_final.jpg",
+    "buyUrl": "https://www.amazon.com/s?k=Festool+CXS+18&tag=myhousetools-20"
+  },
+  {
+    "id": "estwing-e20c",
+    "name": "E20C Claw Hammer",
+    "brand": "Estwing",
+    "origin": "USA",
+    "tags": [
+      "Essentials",
+      "Hand Tools"
+    ],
+    "essential": true,
+    "blurb": "One-piece forged steel, a leather grip, and a balance that settles on the first swing. Estwing’s E20C is the classic American claw hammer, built for picture hanging, trim, and light framing.",
+    "image": "images/Estwing_E20C_Hammer_studio_final.jpg",
+    "buyUrl": "https://www.amazon.com/s?k=Estwing+E20C&tag=myhousetools-20"
+  },
+  {
+    "id": "estwing-dfh12",
+    "name": "DFH12 Dead Blow Mallet",
+    "brand": "Estwing",
+    "origin": "USA",
+    "tags": [
+      "Hand Tools"
+    ],
+    "essential": false,
+    "blurb": "A dead-blow mallet for force without scars. The shot-filled head delivers a heavy, non-rebounding strike, the right thing for seating joints, stuck parts, and assembly work where a steel hammer would mark the surface. It sits next to the claw hammer.",
+    "image": "images/Estwing_DFH12_Mallet_studio_final.jpg",
+    "buyUrl": "https://www.amazon.com/s?k=Estwing+DFH12&tag=myhousetools-20"
+  },
+  {
+    "id": "pb-swiss-swissgrip",
+    "name": "SwissGrip Screwdriver Set",
+    "brand": "PB Swiss Tools",
+    "origin": "Switzerland",
+    "tags": [
+      "Essentials",
+      "Hand Tools"
+    ],
+    "essential": true,
+    "blurb": "Swiss-made drivers with that unmistakable PB feel: precise tips, confident torsion, and grips that stay planted. A proper SwissGrip set covers the fasteners a house actually has, without the stripped screws of a cheap kit.",
+    "image": "images/PB_Swiss_SwissGrip_Set_studio_final.jpg",
+    "buyUrl": "https://www.amazon.com/s?k=PB+Swiss+SwissGrip&tag=myhousetools-20"
+  },
+  {
+    "id": "wiha-esd-micro",
+    "name": "ESD Micro Bit Set",
+    "brand": "Wiha",
+    "origin": "Germany",
+    "tags": [
+      "Hand Tools"
+    ],
+    "essential": false,
+    "blurb": "Electronics, eyeglasses, small appliances, and modern gadgets all ask for bits that full-size drivers can’t touch. Wiha’s ESD micro set is organized, precise, and built to a standard hobby kits don’t reach.",
+    "image": "images/Wiha_ESD_Micro_Bit_Set_studio_final.jpg",
+    "buyUrl": "https://www.amazon.com/s?k=Wiha+ESD+Micro+Bit+Set&tag=myhousetools-20"
+  },
+  {
+    "id": "stabila-81s",
+    "name": "Type 81S Torpedo Level",
+    "brand": "Stabila",
+    "origin": "Germany",
+    "tags": [
+      "Essentials",
+      "Measuring & Layout"
+    ],
+    "essential": true,
+    "blurb": "A pocket torpedo that reads true and survives real use. Stabila’s vials are legendary for a reason: clear, stable, and trustworthy for hangings, shelves, and appliance leveling. The compact die-cast body lives in a drawer or a bag.",
+    "image": "images/Stabila_Type_81S_Torpedo_studio_final.jpg",
+    "buyUrl": "https://www.amazon.com/s?k=Stabila+Type+81S&tag=myhousetools-20"
+  },
+  {
+    "id": "lufkin-self-centering",
+    "name": "Self-Centering 25' Tape",
+    "brand": "Lufkin",
+    "origin": "USA",
+    "tags": [
+      "Measuring & Layout"
+    ],
+    "essential": false,
+    "blurb": "A 25-foot tape with self-centering scales that cut the mental math when locating midpoints. Lufkin’s blade and case are sturdy, the printing is clean, and the hook behaves.",
+    "image": "images/Lufkin_Self_Centering_25_studio_final.jpg",
+    "buyUrl": "https://www.amazon.com/s?k=Lufkin+Self+Centering+25&tag=myhousetools-20"
+  },
+  {
+    "id": "trusco-st350",
+    "name": "ST-350 Toolbox",
+    "brand": "Trusco",
+    "origin": "Japan",
+    "tags": [
+      "Essentials",
+      "Storage"
+    ],
+    "essential": true,
+    "blurb": "The Trusco ST-350 is a compact steel toolbox, rigid and well finished, small enough to leave out rather than hide in a garage. It holds a small kit without becoming a junk drawer.",
+    "image": "images/Trusco_ST350_Toolbox_studio_final.jpg",
+    "buyUrl": "https://www.amazon.com/s?k=Trusco+ST-350&tag=myhousetools-20"
+  },
+  {
+    "id": "knipex-pliers-set",
+    "name": "Pliers Set",
+    "brand": "Knipex",
+    "origin": "Germany",
+    "tags": [
+      "Essentials",
+      "Hand Tools",
+      "Gripping"
+    ],
+    "essential": true,
+    "blurb": "German pliers, built so the jaws meet cleanly and the handles hold under a firm grip. A tight Knipex set covers gripping, cutting, and adjustment for plumbing fixtures, fasteners, wire, and the odd stuck nut.",
+    "image": "images/Knipex_Pliers_Set_studio_final.jpg",
+    "buyUrl": "https://www.amazon.com/s?k=Knipex+Pliers+Set&tag=myhousetools-20"
+  },
+  {
+    "id": "leica-disto-d2",
+    "name": "DISTO D2",
+    "brand": "Leica",
+    "origin": "Switzerland",
+    "tags": [
+      "Essentials",
+      "Measuring & Layout"
+    ],
+    "essential": true,
+    "blurb": "A pocket laser for length, width, and the diagonal that is otherwise a guess. Leica’s optics and Bluetooth keep the reading stable enough to work from, for hangings, furniture, and floor plans. It sits next to the tape.",
+    "image": "images/Leica_DISTO_D2_studio_final.jpg",
+    "buyUrl": "https://www.amazon.com/s?k=Leica+DISTO+D2&tag=myhousetools-20"
+  },
+  {
+    "id": "petzl-actik-core",
+    "name": "ACTIK CORE",
+    "brand": "Petzl",
+    "origin": "France",
+    "tags": [
+      "Light & Safety"
+    ],
+    "essential": false,
+    "blurb": "A rechargeable headlamp that leaves both hands free for wiring, attics, and evening work. Petzl’s beam is even, the CORE battery recharges instead of eating disposables, and the strap stays put.",
+    "image": "images/Petzl_ACTIK_CORE_studio_final.jpg",
+    "buyUrl": "https://www.amazon.com/s?k=Petzl+ACTIK+CORE&tag=myhousetools-20"
+  },
+  {
+    "id": "shinwa-contour-gauge",
+    "name": "Contour Profile Gauge",
+    "brand": "Shinwa",
+    "origin": "Japan",
+    "tags": [
+      "Measuring & Layout"
+    ],
+    "essential": false,
+    "blurb": "A profile gauge copies a shape that is hard to measure: baseboard, tile, a pipe in a wall, so the next piece can be marked cleanly. Shinwa’s stainless pins are finer than the plastic versions, so the curve stays accurate.",
+    "image": "images/Shinwa_Contour_Gauge_studio_final.jpg",
+    "buyUrl": "https://www.amazon.com/s?k=Shinwa+contour+gauge&tag=myhousetools-20"
+  },
+  {
+    "id": "ansell-hyflex-11-800",
+    "name": "HyFlex 11-800",
+    "brand": "Ansell",
+    "origin": "Sri Lanka",
+    "tags": [
+      "Light & Safety"
+    ],
+    "essential": false,
+    "blurb": "A light-assembly glove with a 15-gauge nylon liner and a foam nitrile palm, for handling and grip on dry or slightly oily work. Breathable enough to keep on, with the dexterity a house actually needs, and no latex.",
+    "image": "images/Ansell_HyFlex_11-800_studio_final.jpg",
+    "buyUrl": "https://www.amazon.com/s?k=Ansell+HyFlex+11-800&tag=myhousetools-20"
+  },
+  {
+    "id": "bessey-ehk-trigger-clamp",
+    "name": "EHK Trigger Clamp",
+    "brand": "Bessey",
+    "origin": "Germany",
+    "tags": [
+      "Gripping"
+    ],
+    "essential": false,
+    "blurb": "A one-handed trigger clamp, the third hand for glue-ups, holding work, and assembly. It clamps or spreads, and the pads keep the bar from marking the piece.",
+    "image": "images/Bessey_EHK_Trigger_Clamp_studio_final.jpg",
+    "buyUrl": "https://www.amazon.com/s?k=Bessey+EHK+trigger+clamp&tag=myhousetools-20"
+  },
+  {
+    "id": "olfa-26b",
+    "name": "S-type 26B Craft Knife",
+    "brand": "OLFA",
+    "origin": "Japan",
+    "tags": [
+      "Cutting"
+    ],
+    "essential": false,
+    "blurb": "A pencil-length craft knife with a 1mm single-bevel blade, slide-adjustable, for paper, veneer, scoring, and light whittling. The blade is reversible, and a brass screw locks it.",
+    "image": "images/OLFA_Craft_Knife_26B_studio_chosen.jpg",
+    "buyUrl": "https://www.amazon.com/dp/B000TGNZ8O?tag=myhousetools-20"
+  },
+  {
+    "id": "cwt-herring-blade",
+    "name": "Herring Blade",
+    "brand": "CW&T",
+    "origin": "USA",
+    "tags": [
+      "Cutting"
+    ],
+    "essential": false,
+    "blurb": "A flat utility knife with a magnetic latch and no moving parts. It takes standard 18mm snap blades and sits thin enough for a pocket.",
+    "image": "images/CWT_Herring_Blade_studio_final.jpg",
+    "buyUrl": "https://cwandt.com/products/herring-blade"
+  },
+  {
+    "id": "mitutoyo-500-196-32",
+    "name": "500-196-32 Digimatic Caliper",
+    "brand": "Mitutoyo",
+    "origin": "Japan",
+    "tags": [
+      "Measuring & Layout"
+    ],
+    "essential": false,
+    "blurb": "A 6-inch digital caliper for outside, inside, depth, and step. It wakes on the true reading after power-off, so there is no re-zeroing, at a resolution a tape cannot do.",
+    "image": "images/Mitutoyo_500-196-32_studio_final.jpg",
+    "buyUrl": "https://www.amazon.com/dp/B0GJ7BXS4W?tag=myhousetools-20"
+  }
+]

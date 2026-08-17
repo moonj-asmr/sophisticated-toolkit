@@ -1,1 +1,366 @@
-PLACEHOLDER_STYLES
+:root {
+  --bg: #ffffff;
+  --ink: #141414;
+  --muted: #6b6b6b;
+  --soft: #9a9a9a;
+  --rule: #e8e8e8;
+  --pill-active: #141414;
+  --pill-active-text: #ffffff;
+  --card: #fafafa;
+  --max: 1120px;
+  --serif: "Newsreader", "Times New Roman", Georgia, serif;
+  --sans: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0, 0, 0, 0);
+  white-space: nowrap; border: 0;
+}
+
+.site-header {
+  padding: 4rem 1.5rem 2.75rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.header-inner {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.eyebrow {
+  margin: 0 0 1rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--soft);
+  font-weight: 500;
+}
+
+.site-title {
+  margin: 0;
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(2.4rem, 5vw, 3.4rem);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.site-title img {
+  width: min(20.8rem, 80vw);
+  height: auto;
+  margin: 0 auto;
+}
+
+.tagline {
+  margin: 1rem 0 0;
+  font-size: 1.125rem;
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.manifesto {
+  margin: 1.1rem auto 0;
+  max-width: 20.8rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.filters {
+  padding: 2rem 1.5rem 0.5rem;
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(8px);
+  z-index: 10;
+}
+
+.filters-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.pill {
+  appearance: none;
+  border: 1px solid var(--rule);
+  background: var(--bg);
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.pill:hover {
+  border-color: #cfcfcf;
+  color: var(--ink);
+}
+
+.pill.is-active {
+  background: var(--pill-active);
+  border-color: var(--pill-active);
+  color: var(--pill-active-text);
+}
+
+.catalog {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 1.75rem 1.5rem 5rem;
+}
+
+.result-count {
+  margin: 0 0 1.5rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--soft);
+  letter-spacing: 0.02em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+@media (min-width: 720px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.75rem 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid { gap: 3.5rem 2.5rem; }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.card-image {
+  background: var(--card);
+  overflow: hidden;
+  border: 1px solid var(--rule);
+  line-height: 0;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 0;
+  object-fit: unset;
+}
+
+.card-body {
+  padding: 1.35rem 0.15rem 0;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card-meta {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.35rem;
+}
+
+.card-brand {
+  margin: 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--soft);
+  font-weight: 500;
+}
+
+.origin {
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border: 1px solid var(--rule);
+  padding: 0.2rem 0.45rem;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+
+.card-name {
+  margin: 0 0 0.85rem;
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+  line-height: 1.2;
+}
+
+.card-blurb {
+  margin: 0 0 1.25rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  flex: 1;
+}
+
+.card-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.get-it {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-bottom: 1px solid var(--ink);
+  padding-bottom: 0.1rem;
+  transition: opacity 0.15s ease;
+}
+
+.get-it:hover { opacity: 0.55; }
+
+.empty {
+  text-align: center;
+  color: var(--soft);
+  padding: 3rem 0;
+}
+
+.site-footer {
+  border-top: 1px solid var(--rule);
+  padding: 3.5rem 1.5rem 2.5rem;
+  background: #fcfcfc;
+}
+
+.footer-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  display: grid;
+  gap: 2.5rem;
+}
+
+@media (min-width: 720px) {
+  .footer-inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+}
+
+.footer-heading {
+  margin: 0 0 0.75rem;
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+.footer-col p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.65;
+  max-width: 28rem;
+}
+
+.signup {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  max-width: 22rem;
+}
+
+.signup input {
+  flex: 1;
+  min-width: 0;
+  border: 1px solid var(--rule);
+  background: var(--bg);
+  padding: 0.65rem 0.8rem;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  color: var(--ink);
+  border-radius: 2px;
+}
+
+.signup input:focus {
+  outline: 1px solid #bbb;
+  outline-offset: 0;
+}
+
+.signup button {
+  appearance: none;
+  border: 1px solid var(--ink);
+  background: var(--ink);
+  color: #fff;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.65rem 1.1rem;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.signup button:hover { opacity: 0.85; }
+
+.signup-note {
+  margin-top: 0.75rem !important;
+  font-size: 0.85rem !important;
+  color: var(--soft) !important;
+}
+
+.copyright {
+  max-width: var(--max);
+  margin: 2.75rem auto 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.75rem;
+  color: var(--soft);
+  text-align: center;
+}
+
+.associate-line {
+  margin: 3rem 0 0;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
