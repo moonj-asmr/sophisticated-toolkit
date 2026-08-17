@@ -385,7 +385,7 @@ a { color: inherit; }
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    padding: 3px 1.25rem;
+    padding: 8px 1.25rem;
   }
 
   #filters::-webkit-scrollbar {
