@@ -371,7 +371,7 @@ a { color: inherit; }
   }
 
   .site-title img {
-    width: min(13.6rem, 58vw);
+    width: min(18rem, 72vw);
   }
 
   .manifesto {
