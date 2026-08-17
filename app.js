@@ -52,6 +52,17 @@ function toggleFilter(label) {
   renderTools();
 }
 
+function shuffle(items) {
+  const arr = items.slice();
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    const tmp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = tmp;
+  }
+  return arr;
+}
+
 function matches(tool) {
   const active = currentFilter();
   if (active === "All") return true;
@@ -65,16 +76,16 @@ function renderTools() {
   if (!state.tools.length) return;
 
   const visible = state.tools.filter(matches);
+  if (els.empty) {
+    els.empty.hidden = visible.length > 0;
+    els.empty.textContent = visible.length > 0 ? "" : "No tools match these filters.";
+  }
   els.grid.innerHTML = "";
   if (els.count) {
     els.count.textContent =
       visible.length === state.tools.length
         ? `${visible.length} tools`
         : `${visible.length} of ${state.tools.length} tools`;
-  }
-  if (els.empty) {
-    els.empty.hidden = visible.length > 0;
-    els.empty.textContent = visible.length > 0 ? "" : "No tools match these filters.";
   }
 
   visible.forEach((tool) => {
@@ -134,19 +145,9 @@ function readEmbeddedTools() {
 }
 
 function applyTools(tools) {
-  state.tools = tools;
+  state.tools = shuffle(tools);
   if (!FILTERS.includes(state.active)) state.active = "All";
   renderFilters();
-  const alreadyPainted =
-    currentFilter() === "All" && els.grid && els.grid.querySelectorAll(".card").length === tools.length;
-  if (alreadyPainted) {
-    if (els.count) els.count.textContent = `${tools.length} tools`;
-    if (els.empty) {
-      els.empty.hidden = true;
-      els.empty.textContent = "";
-    }
-    return;
-  }
   renderTools();
 }
 
