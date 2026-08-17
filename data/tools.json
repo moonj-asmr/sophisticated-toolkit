@@ -242,5 +242,31 @@
     "blurb": "A 6-inch digital caliper for outside, inside, depth, and step. It wakes on the true reading after power-off, so there is no re-zeroing, at a resolution a tape cannot do.",
     "image": "images/Mitutoyo_500-196-32_studio_final.jpg",
     "buyUrl": "https://www.amazon.com/dp/B0GJ7BXS4W?tag=myhousetools-20"
+  },
+  {
+    "id": "klein-650-scratch-awl",
+    "name": "650 Scratch Awl",
+    "brand": "Klein Tools",
+    "origin": "USA",
+    "tags": [
+      "Hand Tools"
+    ],
+    "essential": false,
+    "blurb": "A scratch awl for scribing metal, starting screw holes, and piercing. The 3.5-inch chrome-plated shank is heat-treated, and the Cushion-Grip handle stays planted.",
+    "image": "images/Klein_650_Scratch_Awl_studio_final.jpg",
+    "buyUrl": "https://www.amazon.com/dp/B0000302W2?tag=myhousetools-20"
+  },
+  {
+    "id": "rotring-300-lead-holder",
+    "name": "300 Lead Holder",
+    "brand": "rOtring",
+    "origin": "Germany",
+    "tags": [
+      "Measuring & Layout"
+    ],
+    "essential": false,
+    "blurb": "A 2.0 mm lead holder for marking lumber, tile, metal, and other surfaces a 0.5 mm lead will not survive. The hex barrel has a clutch, a lead-grade dial, and a sharpener under the cap.",
+    "image": "images/rOtring_300_2mm_studio_final.jpg",
+    "buyUrl": "https://www.amazon.com/dp/B00387NZ7C?tag=myhousetools-20"
   }
 ]
