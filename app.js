@@ -18,7 +18,6 @@ const state = {
 const els = {
   filters: document.getElementById("filters"),
   grid: document.getElementById("tool-grid"),
-  count: document.getElementById("result-count"),
   empty: document.getElementById("empty-state"),
   year: document.getElementById("year"),
   form: document.getElementById("signup-form"),
@@ -81,12 +80,6 @@ function renderTools() {
     els.empty.textContent = visible.length > 0 ? "" : "No tools match these filters.";
   }
   els.grid.innerHTML = "";
-  if (els.count) {
-    els.count.textContent =
-      visible.length === state.tools.length
-        ? `${visible.length} tools`
-        : `${visible.length} of ${state.tools.length} tools`;
-  }
 
   visible.forEach((tool) => {
     const article = document.createElement("article");
@@ -167,7 +160,6 @@ async function init() {
 init().catch((err) => {
   console.error(err);
   const hasCards = els.grid && els.grid.querySelector(".card");
-  if (!hasCards && els.count) els.count.textContent = "Unable to load catalog.";
   if (!hasCards && els.empty) {
     els.empty.hidden = true;
     els.empty.textContent = "";
