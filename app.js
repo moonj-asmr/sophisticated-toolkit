@@ -3,6 +3,11 @@ const FILTERS = [
   "Essentials",
   "Power",
   "Hand Tools",
+  "Cutting",
+  "Measuring & Layout",
+  "Storage",
+  "Gripping",
+  "Light & Safety",
 ];
 
 const state = {
