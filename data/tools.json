@@ -281,5 +281,18 @@
     "blurb": "A 5-foot aluminum stepladder for bulbs, high shelves, and paint. It opens with one hand and folds to four inches, with extra-wide steps, a large standing platform, a tall handrail, and a tool tray on top. A chair is the wrong tool for this work.",
     "image": "images/Little_Giant_FlipNLite_5ft_studio_final.jpg",
     "buyUrl": "https://www.amazon.com/dp/B0043X1JBY?tag=myhousetools-20"
+  },
+  {
+    "id": "suizan-ryoba-95",
+    "name": "9.5\" Ryoba",
+    "brand": "SUIZAN",
+    "origin": "Japan",
+    "tags": [
+      "Cutting"
+    ],
+    "essential": false,
+    "blurb": "A 9.5-inch Japanese pull saw with rip teeth on one edge and cross-cut on the other. For trim, lumber, and a clean cut where a circular saw is too much. Rattan-wrapped handle, thin blade.",
+    "image": "images/SUIZAN_Ryoba_95_studio_final.jpg",
+    "buyUrl": "https://www.amazon.com/dp/B01MU9XB1W?tag=myhousetools-20"
   }
 ]
