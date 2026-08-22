@@ -359,5 +359,18 @@
     "blurb": "A dual-range non-contact voltage tester, 12–1000V or 70–1000V AC. Visual and audible, CAT IV 1000V, pocket clip. For outlets, breakers, and doorbells.",
     "image": "images/Klein_NCVT2P_studio_final.jpg",
     "buyUrl": "https://www.amazon.com/dp/B07L5N8ZWS?tag=myhousetools-20"
+  },
+  {
+    "id": "wazakura-satsuki-7",
+    "name": "Satsuki 7\"",
+    "brand": "Wazakura",
+    "origin": "Japan",
+    "tags": [
+      "Cutting"
+    ],
+    "essential": false,
+    "blurb": "Sanjo-forged Satsuki scissors for thin branches up to about 1/8 inch. Long slim handles for canopy work, and for garden or ikebana.",
+    "image": "images/Wazakura_Satsuki_7in_studio_final.jpg",
+    "buyUrl": "https://www.amazon.com/dp/B07SC2JRQZ?tag=myhousetools-20"
   }
 ]
