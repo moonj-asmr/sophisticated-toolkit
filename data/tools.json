@@ -372,5 +372,18 @@
     "blurb": "Sanjo-forged Satsuki scissors for thin branches up to about 1/8 inch. Long slim handles for canopy work, and for garden or ikebana.",
     "image": "images/Wazakura_Satsuki_7in_studio_final.jpg",
     "buyUrl": "https://www.amazon.com/dp/B07SC2JRQZ?tag=myhousetools-20"
+  },
+  {
+    "id": "olfa-scs2-7-scissors",
+    "name": "SCS-2 7\" Scissors",
+    "brand": "OLFA",
+    "origin": "Japan",
+    "tags": [
+      "Cutting"
+    ],
+    "essential": false,
+    "blurb": "Seven-inch stainless scissors with one serrated edge. For fabric, plastic, rubber, and kitchen work. Ambidextrous ABS handles.",
+    "image": "images/OLFA_SCS2_studio_final.jpg",
+    "buyUrl": "https://www.amazon.com/dp/B000LE3SEU?tag=myhousetools-20"
   }
 ]
