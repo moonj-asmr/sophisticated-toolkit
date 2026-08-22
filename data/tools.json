@@ -307,5 +307,18 @@
     "blurb": "A right-angle flashlight for the attic, the panel, and under the sink. The head articulates, spot and flood can run together or alone, and a magnetic clip holds it so both hands stay free. The body glows in the dark.",
     "image": "images/Pelican_3410_studio_final.jpg",
     "buyUrl": "https://www.amazon.com/dp/B07PJVP98V?tag=myhousetools-20"
+  },
+  {
+    "id": "felco-f2",
+    "name": "F-2",
+    "brand": "Felco",
+    "origin": "Switzerland",
+    "tags": [
+      "Cutting"
+    ],
+    "essential": false,
+    "blurb": "A bypass pruner for live wood. Forged aluminum handles, hardened steel blade, wire-cutting notch, and every part replaceable.",
+    "image": "images/Felco_F2_studio_final.jpg",
+    "buyUrl": "https://www.amazon.com/dp/B00023RYS6?tag=myhousetools-20"
   }
 ]
