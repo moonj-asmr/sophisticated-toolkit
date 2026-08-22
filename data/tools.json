@@ -320,5 +320,18 @@
     "blurb": "A bypass pruner for live wood. Forged aluminum handles, hardened steel blade, wire-cutting notch, and every part replaceable.",
     "image": "images/Felco_F2_studio_final.jpg",
     "buyUrl": "https://www.amazon.com/dp/B00023RYS6?tag=myhousetools-20"
+  },
+  {
+    "id": "carson-bugview-hu-10",
+    "name": "BugView HU-10",
+    "brand": "Carson",
+    "origin": "USA",
+    "tags": [
+      "Essentials"
+    ],
+    "essential": true,
+    "blurb": "A one-hand bug catcher with a 5x acrylic lens. Catch, view, release, without crushing the specimen.",
+    "image": "images/Carson_BugView_HU10_studio_final.jpg",
+    "buyUrl": "https://www.amazon.com/dp/B000JQ5AZK?tag=myhousetools-20"
   }
 ]
