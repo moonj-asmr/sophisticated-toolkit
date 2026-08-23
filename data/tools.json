@@ -480,5 +480,18 @@
     "blurb": "Seki stainless putty knives in three widths: rounded 15/16\", 3\", and 4\". Full tang, checkered handles.",
     "image": "images/ALLEX_putty_studio_final.jpg",
     "buyUrl": "https://www.amazon.com/dp/B0BYD3F42J?tag=myhousetools-20"
+  },
+  {
+    "id": "fox-40-micro",
+    "name": "Micro Whistle",
+    "brand": "Fox 40",
+    "origin": "Canada",
+    "tags": [
+      "Light & Safety"
+    ],
+    "essential": false,
+    "blurb": "A pealess Micro whistle that works wet. Loud, no cork to freeze or stick.",
+    "image": "images/Fox40_Micro_studio_final.jpg",
+    "buyUrl": "https://www.amazon.com/dp/B00020SGYU?tag=myhousetools-20"
   }
 ]
