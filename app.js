@@ -8,6 +8,7 @@ const FILTERS = [
   "Storage",
   "Gripping",
   "Light & Safety",
+  "Outdoor",
 ];
 
 const state = {
