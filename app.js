@@ -75,6 +75,14 @@ function renderTools() {
   if (!els.grid) return;
   if (!state.tools.length) return;
 
+  // Remove static .card nodes left as siblings outside #tool-grid (bad markup).
+  let sib = els.grid.nextElementSibling;
+  while (sib && sib.classList && sib.classList.contains("card")) {
+    const dead = sib;
+    sib = sib.nextElementSibling;
+    dead.remove();
+  }
+
   const visible = state.tools.filter(matches);
   if (els.empty) {
     els.empty.hidden = visible.length > 0;
