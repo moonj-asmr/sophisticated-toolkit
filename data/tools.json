@@ -441,5 +441,18 @@
     "blurb": "An imperial Rainbow hex L-key set with ball ends and a clip. Inch sizes only. Separate from the metric set.",
     "image": "images/PB_Swiss_212Z_LH_12_studio_final.jpg",
     "buyUrl": "https://www.amazon.com/dp/B0CJYJBWKQ?tag=myhousetools-20"
+  },
+  {
+    "id": "bahco-625-ergo-scraper",
+    "name": "625 Ergo Scraper",
+    "brand": "Bahco",
+    "origin": "Sweden",
+    "tags": [
+      "Hand Tools"
+    ],
+    "essential": false,
+    "blurb": "A carbide-edge hand scraper for paint and surface prep. Triangle blade, belt holster.",
+    "image": "images/Bahco_625_studio_final.jpg",
+    "buyUrl": "https://www.amazon.com/dp/B001G9SPBU?tag=myhousetools-20"
   }
 ]
