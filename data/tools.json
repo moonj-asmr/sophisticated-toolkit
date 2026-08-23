@@ -411,5 +411,18 @@
     "blurb": "An 8-inch forged stripper for 10–20 AWG solid or stranded. Locating ridges on the jaws, and it cuts 6-32 and 8-32 screws without threading. Works on NM-B, BX, and MC.",
     "image": "images/KNIPEX_13728_studio_final.jpg",
     "buyUrl": "https://www.amazon.com/dp/B08L8D54FB?tag=myhousetools-20"
+  },
+  {
+    "id": "stihl-bga-50",
+    "name": "BGA 50",
+    "brand": "STIHL",
+    "origin": "Germany",
+    "tags": [
+      "Outdoor"
+    ],
+    "essential": false,
+    "blurb": "A cordless AK blower for the driveway and patio, where noise matters. About 455 CFM and 123 mph. Kit with AK 20 battery and AL 101 charger.",
+    "image": "images/STIHL_BGA50_studio_final.jpg",
+    "buyUrl": "https://www.acehardware.com/departments/lawn-and-garden/outdoor-power-equipment/leaf-blowers/F001766?variationProductCode=7060933"
   }
 ]
