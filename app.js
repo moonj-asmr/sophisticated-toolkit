@@ -108,7 +108,7 @@ function renderTools() {
           <p class="card-brand">${escapeHtml(tool.brand)}</p>
           <span class="origin">${escapeHtml(tool.origin)}</span>
         </div>
-        <h2 class="card-name">${escapeHtml(tool.name)}</h2>
+        <h2 class="card-name"><a href="/tools/${escapeAttr(tool.id || "")}/">${escapeHtml(tool.name)}</a></h2>
         <p class="card-blurb">${escapeHtml(tool.blurb)}</p>
         <div class="card-actions">
           <a class="get-it" href="${escapeAttr(tool.buyUrl)}" target="_blank" rel="noopener noreferrer sponsored"
@@ -171,10 +171,10 @@ function asinFromUrl(url) {
 function trackGetItClick(anchor) {
   if (typeof gtag !== "function") return;
   const href = anchor.href || "";
-  const card = anchor.closest(".card");
+  const card = anchor.closest(".card, .tool-page");
   const name =
     anchor.getAttribute("data-tool-name") ||
-    (card && card.querySelector(".card-name")?.textContent?.trim()) ||
+    (card && card.querySelector(".card-name, .tool-name")?.textContent?.trim()) ||
     "";
   const brand =
     anchor.getAttribute("data-tool-brand") ||
@@ -202,13 +202,14 @@ document.addEventListener(
 );
 
 async function init() {
+  if (!els.grid) return;
   removeOrphanCards();
   const embedded = readEmbeddedTools();
   if (embedded) {
     applyTools(embedded);
     return;
   }
-  const res = await fetch("data/tools.json");
+  const res = await fetch("/data/tools.json");
   if (!res.ok) throw new Error("Failed to load tools.json");
   const data = await res.json();
   if (!Array.isArray(data) || !data.length) throw new Error("Empty catalog");

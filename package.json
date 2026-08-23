@@ -4,7 +4,8 @@
   "private": true,
   "description": "Fewer, better tools. The essentials.",
   "scripts": {
-    "start": "npx --yes serve . -l ${PORT:-3000}",
+    "build": "node scripts/build-pages.mjs",
+    "start": "npm run build && npx --yes serve . -l ${PORT:-3000}",
     "dev": "npx --yes serve . -l 3000"
   },
   "engines": {
