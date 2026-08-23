@@ -111,7 +111,10 @@ function renderTools() {
         <h2 class="card-name">${escapeHtml(tool.name)}</h2>
         <p class="card-blurb">${escapeHtml(tool.blurb)}</p>
         <div class="card-actions">
-          <a class="get-it" href="${escapeAttr(tool.buyUrl)}" target="_blank" rel="noopener noreferrer sponsored">
+          <a class="get-it" href="${escapeAttr(tool.buyUrl)}" target="_blank" rel="noopener noreferrer sponsored"
+             data-tool-id="${escapeAttr(tool.id || "")}"
+             data-tool-name="${escapeAttr(tool.name || "")}"
+             data-tool-brand="${escapeAttr(tool.brand || "")}">
             Get it <span aria-hidden="true">→</span>
           </a>
         </div>
@@ -158,6 +161,45 @@ function applyTools(tools) {
   renderFilters();
   renderTools();
 }
+
+
+function asinFromUrl(url) {
+  const m = String(url || "").match(/\/(?:dp|gp\/product|product)\/([A-Z0-9]{10})/i);
+  return m ? m[1].toUpperCase() : "";
+}
+
+function trackGetItClick(anchor) {
+  if (typeof gtag !== "function") return;
+  const href = anchor.href || "";
+  const card = anchor.closest(".card");
+  const name =
+    anchor.getAttribute("data-tool-name") ||
+    (card && card.querySelector(".card-name")?.textContent?.trim()) ||
+    "";
+  const brand =
+    anchor.getAttribute("data-tool-brand") ||
+    (card && card.querySelector(".card-brand")?.textContent?.trim()) ||
+    "";
+  const id = anchor.getAttribute("data-tool-id") || "";
+  const asin = asinFromUrl(href);
+  gtag("event", "get_it_click", {
+    tool_id: id,
+    tool_name: name,
+    tool_brand: brand,
+    asin: asin,
+    link_url: href,
+  });
+}
+
+document.addEventListener(
+  "click",
+  (e) => {
+    const a = e.target && e.target.closest ? e.target.closest("a.get-it") : null;
+    if (!a) return;
+    trackGetItClick(a);
+  },
+  true
+);
 
 async function init() {
   removeOrphanCards();
