@@ -454,5 +454,18 @@
     "blurb": "A carbide-edge hand scraper for paint and surface prep. Triangle blade, belt holster.",
     "image": "images/Bahco_625_studio_final.jpg",
     "buyUrl": "https://www.amazon.com/dp/B001G9SPBU?tag=myhousetools-20"
+  },
+  {
+    "id": "pb-swiss-212lh-10-metric",
+    "name": "212LH-10 Metric",
+    "brand": "PB Swiss Tools",
+    "origin": "Switzerland",
+    "tags": [
+      "Hand Tools"
+    ],
+    "essential": false,
+    "blurb": "A metric chrome ball-end hex L-key set in the red clip. Millimeter sizes only. Separate from the imperial Rainbow set.",
+    "image": "images/PB_Swiss_212LH_10_studio_final.jpg",
+    "buyUrl": "https://www.amazon.com/dp/B001EQADTC?tag=myhousetools-20"
   }
 ]
