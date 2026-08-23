@@ -253,6 +253,16 @@ a { color: inherit; }
   line-height: 1.2;
 }
 
+.card-name a,
+.site-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.card-name a:hover {
+  opacity: 0.55;
+}
+
 .card-blurb {
   margin: 0 0 1.25rem;
   color: var(--muted);
@@ -382,6 +392,68 @@ a { color: inherit; }
   text-align: center;
   font-size: 0.8rem;
   color: var(--muted);
+}
+
+.tool-page {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 5rem;
+}
+
+.tool-back {
+  display: inline-block;
+  margin-bottom: 1.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--muted);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.tool-back:hover {
+  color: var(--ink);
+  border-bottom-color: var(--ink);
+}
+
+.tool-meta {
+  margin-bottom: 0.65rem;
+}
+
+.tool-name {
+  margin: 0 0 1rem;
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(1.85rem, 4vw, 2.5rem);
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.tool-blurb {
+  margin: 0 0 1.75rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.tool-hero {
+  width: 100%;
+  background: var(--card);
+  overflow: hidden;
+  border: 1px solid var(--rule);
+  line-height: 0;
+  margin-bottom: 1.75rem;
+}
+
+.tool-hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.tool-actions {
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 700px) {
