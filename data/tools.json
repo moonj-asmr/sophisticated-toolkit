@@ -385,5 +385,18 @@
     "blurb": "Seven-inch stainless scissors with one serrated edge. For fabric, plastic, rubber, and kitchen work. Ambidextrous ABS handles.",
     "image": "images/OLFA_SCS2_studio_final.jpg",
     "buyUrl": "https://www.amazon.com/dp/B000LE3SEU?tag=myhousetools-20"
+  },
+  {
+    "id": "okatsune-217-hedge-shears",
+    "name": "217 Hedge Shears",
+    "brand": "Okatsune",
+    "origin": "Japan",
+    "tags": [
+      "Cutting"
+    ],
+    "essential": false,
+    "blurb": "Short white-oak handles and 175mm Izumo Yasugi blades. For topiary and other tight cuts.",
+    "image": "images/Okatsune_217_studio_final.jpg",
+    "buyUrl": "https://www.amazon.com/dp/B001HYO9WI?tag=myhousetools-20"
   }
 ]
