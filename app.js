@@ -71,17 +71,23 @@ function matches(tool) {
   return tags.has(active);
 }
 
+
+function removeOrphanCards() {
+  if (!els.grid) return;
+  const parent = els.grid.parentElement;
+  if (!parent) return;
+  // Any .card that is a direct child of .catalog (sibling of #tool-grid) is full-width junk.
+  [...parent.children].forEach((el) => {
+    if (el !== els.grid && el.classList && el.classList.contains("card")) {
+      el.remove();
+    }
+  });
+}
+
 function renderTools() {
   if (!els.grid) return;
   if (!state.tools.length) return;
-
-  // Remove static .card nodes left as siblings outside #tool-grid (bad markup).
-  let sib = els.grid.nextElementSibling;
-  while (sib && sib.classList && sib.classList.contains("card")) {
-    const dead = sib;
-    sib = sib.nextElementSibling;
-    dead.remove();
-  }
+  removeOrphanCards();
 
   const visible = state.tools.filter(matches);
   if (els.empty) {
@@ -154,6 +160,7 @@ function applyTools(tools) {
 }
 
 async function init() {
+  removeOrphanCards();
   const embedded = readEmbeddedTools();
   if (embedded) {
     applyTools(embedded);
@@ -166,6 +173,7 @@ async function init() {
   applyTools(data);
 }
 
+removeOrphanCards();
 init().catch((err) => {
   console.error(err);
   const hasCards = els.grid && els.grid.querySelector(".card");
