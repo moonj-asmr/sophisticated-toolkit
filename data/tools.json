@@ -398,5 +398,18 @@
     "blurb": "Short white-oak handles and 175mm Izumo Yasugi blades. For topiary and other tight cuts.",
     "image": "images/Okatsune_217_studio_final.jpg",
     "buyUrl": "https://www.amazon.com/dp/B001HYO9WI?tag=myhousetools-20"
+  },
+  {
+    "id": "knipex-13-72-8-wire-stripper",
+    "name": "13 72 8 Wire Stripper",
+    "brand": "KNIPEX",
+    "origin": "Germany",
+    "tags": [
+      "Gripping"
+    ],
+    "essential": false,
+    "blurb": "An 8-inch forged stripper for 10–20 AWG solid or stranded. Locating ridges on the jaws, and it cuts 6-32 and 8-32 screws without threading. Works on NM-B, BX, and MC.",
+    "image": "images/KNIPEX_13728_studio_final.jpg",
+    "buyUrl": "https://www.amazon.com/dp/B08L8D54FB?tag=myhousetools-20"
   }
 ]
