@@ -428,5 +428,18 @@
     "blurb": "A cordless AK blower for the driveway and patio, where noise matters. About 455 CFM and 123 mph. Kit with AK 20 battery and AL 101 charger.",
     "image": "images/STIHL_BGA50_studio_final.jpg",
     "buyUrl": "https://www.acehardware.com/departments/lawn-and-garden/outdoor-power-equipment/leaf-blowers/F001766?variationProductCode=7060933"
+  },
+  {
+    "id": "pb-swiss-212z-lh-12-imperial",
+    "name": "212Z-LH-12 Imperial",
+    "brand": "PB Swiss Tools",
+    "origin": "Switzerland",
+    "tags": [
+      "Hand Tools"
+    ],
+    "essential": false,
+    "blurb": "Color-coded imperial hex set, ball end, in the clip. RainBow sizes 1/20 through 5/16.",
+    "image": "images/PB_Swiss_212Z_LH_12_studio_final.jpg",
+    "buyUrl": "https://www.amazon.com/dp/B0CJYJBWKQ?tag=myhousetools-20"
   }
 ]
