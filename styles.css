@@ -167,6 +167,8 @@ a { color: inherit; }
   min-height: 100%;
   min-width: 0;
   max-width: 100%;
+  overflow: hidden;
+  grid-column: auto / span 1;
 }
 
 .card-image {
