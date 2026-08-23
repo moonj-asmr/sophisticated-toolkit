@@ -44,14 +44,14 @@
   },
   {
     "id": "estwing-dfh12",
-    "name": "DFH12 Dead Blow Mallet",
+    "name": "DFH12 Rubber Mallet",
     "brand": "Estwing",
     "origin": "USA",
     "tags": [
       "Hand Tools"
     ],
     "essential": false,
-    "blurb": "A dead-blow mallet for force without scars. The shot-filled head delivers a heavy, non-rebounding strike, the right thing for seating joints, stuck parts, and assembly work where a steel hammer would mark the surface. It sits next to the claw hammer.",
+    "blurb": "A rubber mallet for force without scars. Soft face for seating joints, stuck parts, and assembly work where a steel hammer would mark the surface. It sits next to the claw hammer.",
     "image": "images/Estwing_DFH12_Mallet_studio_final.jpg",
     "buyUrl": "https://www.amazon.com/dp/B00943ROPS?tag=myhousetools-20"
   },
@@ -314,7 +314,8 @@
     "brand": "Felco",
     "origin": "Switzerland",
     "tags": [
-      "Cutting"
+      "Cutting",
+      "Outdoor"
     ],
     "essential": false,
     "blurb": "A bypass pruner for live wood. Forged aluminum handles, hardened steel blade, wire-cutting notch, and every part replaceable.",
@@ -327,7 +328,8 @@
     "brand": "Carson",
     "origin": "USA",
     "tags": [
-      "Essentials"
+      "Essentials",
+      "Outdoor"
     ],
     "essential": true,
     "blurb": "A one-hand bug catcher with a 5x acrylic lens. Catch, view, release, without crushing the specimen.",
@@ -366,7 +368,8 @@
     "brand": "Wazakura",
     "origin": "Japan",
     "tags": [
-      "Cutting"
+      "Cutting",
+      "Outdoor"
     ],
     "essential": false,
     "blurb": "Sanjo-forged Satsuki scissors for thin branches up to about 1/8 inch. Long slim handles for canopy work, and for garden or ikebana.",
@@ -392,7 +395,8 @@
     "brand": "Okatsune",
     "origin": "Japan",
     "tags": [
-      "Cutting"
+      "Cutting",
+      "Outdoor"
     ],
     "essential": false,
     "blurb": "Short white-oak handles and 175mm Izumo Yasugi blades. For topiary and other tight cuts.",
