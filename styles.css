@@ -399,10 +399,19 @@ a { color: inherit; }
 
 .signup button:hover { opacity: 0.85; }
 
+.signup button:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
 .signup-note {
   margin-top: 0.75rem !important;
   font-size: 0.85rem !important;
   color: var(--soft) !important;
+}
+
+.signup-note.is-error {
+  color: var(--muted) !important;
 }
 
 .copyright {
