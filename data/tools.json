@@ -519,5 +519,18 @@
     "blurb": "A 2-inch angular sash brush for trim, windows, and moldings. Nylon/polyester, copper ferrule, fluted hardwood. For all paints.",
     "image": "images/Purdy_XL_Glide_2in_studio_final.jpg",
     "buyUrl": "https://www.amazon.com/dp/B00002N8Z1?tag=myhousetools-20"
+  },
+  {
+    "id": "franklin-prosensor-m210",
+    "name": "ProSensor M210",
+    "brand": "Franklin Sensors",
+    "origin": "USA",
+    "tags": [
+      "Measuring & Layout"
+    ],
+    "essential": false,
+    "blurb": "A stud finder with 13 sensors that shows the full width of the stud, not just a guess at the center. No calibration. Live-wire meter. Wood or metal.",
+    "image": "images/Franklin_ProSensor_M210_green_studio_final.jpg",
+    "buyUrl": "https://www.amazon.com/dp/B0DFS2MVMP?tag=myhousetools-20"
   }
 ]
