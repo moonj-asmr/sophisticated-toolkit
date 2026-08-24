@@ -11,7 +11,8 @@ import { fileURLToPath } from "node:url";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const SITE = "https://myhousetools.com";
 const GA_ID = "G-924R9QWW3P";
-const ASSET_V = "wk0";
+const ASSET_V = "wk1";
+const DEFAULT_BUTTONDOWN_USERNAME = "housetools";
 const ID_RE = /^[a-z0-9][a-z0-9-]*$/;
 const META_LEN = 155;
 const KIT_INTRO =
@@ -58,8 +59,14 @@ function buyRel(url) {
     : "noopener noreferrer";
 }
 
-function renderFooter(year) {
+function embedSubscribeUrl(username) {
+  const slug = String(username || DEFAULT_BUTTONDOWN_USERNAME).trim() || DEFAULT_BUTTONDOWN_USERNAME;
+  return `https://buttondown.com/api/emails/embed-subscribe/${encodeURIComponent(slug)}`;
+}
+
+function renderFooter(year, username) {
   const y = escapeHtml(year || String(new Date().getFullYear()));
+  const action = escapeAttr(embedSubscribeUrl(username));
   return `  <footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-col">
@@ -69,12 +76,13 @@ function renderFooter(year) {
       <div class="footer-col">
         <h2 class="footer-heading">Stay in touch</h2>
         <p>Occasional notes on tools worth keeping. No noise.</p>
-        <form class="signup" id="signup-form" action="#" method="post">
+        <form class="signup" id="signup-form" action="${action}" method="post">
           <label class="sr-only" for="email">Email</label>
           <input type="email" id="email" name="email" placeholder="name@example.com" required autocomplete="email" />
+          <input type="hidden" name="embed" value="1" />
           <button type="submit">Join</button>
         </form>
-        <p class="signup-note" id="signup-note" hidden>Thanks — signup coming soon.</p>
+        <p class="signup-note" id="signup-note" role="status" aria-live="polite" hidden></p>
       </div>
     </div>
     <p class="copyright">© <span id="year">${y}</span> House Tools · <a href="/kits/essentials/">Essentials</a></p>
@@ -132,7 +140,7 @@ ${extra}    </div>
   </header>`;
 }
 
-function renderToolPage(tool) {
+function renderToolPage(tool, username) {
   const brand = String(tool.brand ?? "");
   const name = String(tool.name ?? "");
   const origin = String(tool.origin ?? "");
@@ -202,7 +210,7 @@ ${renderLockupHeader()}
     </div>
   </main>
 
-${renderFooter(e.year)}
+${renderFooter(e.year, username)}
 
   <script src="/app.js?v=${ASSET_V}"></script>
 </body>
@@ -241,7 +249,7 @@ function renderKitCard(tool) {
       </article>`;
 }
 
-function renderKitPage(essentials) {
+function renderKitPage(essentials, username) {
   const title = "Essentials — tools a house actually needs";
   const description =
     "The short list of tools a house actually needs, in the versions worth keeping. Not the most expensive or most extravagant, just the most competent, and made to last.";
@@ -269,7 +277,7 @@ ${cards}
     </section>
   </main>
 
-${renderFooter(year)}
+${renderFooter(year, username)}
 
   <script src="/app.js?v=${ASSET_V}"></script>
 </body>
@@ -300,12 +308,24 @@ ${body}
 `;
 }
 
+async function readButtondownUsername() {
+  try {
+    const raw = await readFile(join(ROOT, "data", "site.json"), "utf8");
+    const site = JSON.parse(raw);
+    const slug = String(site?.buttondownUsername || "").trim();
+    return slug || DEFAULT_BUTTONDOWN_USERNAME;
+  } catch {
+    return DEFAULT_BUTTONDOWN_USERNAME;
+  }
+}
+
 async function main() {
   const raw = await readFile(join(ROOT, "data", "tools.json"), "utf8");
   const tools = JSON.parse(raw);
   if (!Array.isArray(tools) || !tools.length) {
     throw new Error("data/tools.json is empty or not an array");
   }
+  const username = await readButtondownUsername();
 
   const toolsDir = join(ROOT, "tools");
   await rm(toolsDir, { recursive: true, force: true });
@@ -319,13 +339,13 @@ async function main() {
     ids.push(id);
     const dir = join(toolsDir, id);
     await mkdir(dir, { recursive: true });
-    await writeFile(join(dir, "index.html"), renderToolPage(tool), "utf8");
+    await writeFile(join(dir, "index.html"), renderToolPage(tool, username), "utf8");
   }
 
   const essentials = tools.filter((tool) => tool.essential === true);
   const kitDir = join(ROOT, "kits", "essentials");
   await mkdir(kitDir, { recursive: true });
-  await writeFile(join(kitDir, "index.html"), renderKitPage(essentials), "utf8");
+  await writeFile(join(kitDir, "index.html"), renderKitPage(essentials, username), "utf8");
 
   await writeFile(join(ROOT, "sitemap.xml"), renderSitemap(ids), "utf8");
   console.log(

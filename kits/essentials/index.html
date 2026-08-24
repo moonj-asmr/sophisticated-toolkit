@@ -19,7 +19,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/styles.css?v=wk0" />
+  <link rel="stylesheet" href="/styles.css?v=wk1" />
   <link rel="icon" href="/favicon.ico?v=house3" sizes="any" />
   <link rel="icon" type="image/png" href="/images/favicon-32.png?v=house3" sizes="32x32" />
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png?v=house3" />
@@ -292,17 +292,18 @@
       <div class="footer-col">
         <h2 class="footer-heading">Stay in touch</h2>
         <p>Occasional notes on tools worth keeping. No noise.</p>
-        <form class="signup" id="signup-form" action="#" method="post">
+        <form class="signup" id="signup-form" action="https://buttondown.com/api/emails/embed-subscribe/housetools" method="post">
           <label class="sr-only" for="email">Email</label>
           <input type="email" id="email" name="email" placeholder="name@example.com" required autocomplete="email" />
+          <input type="hidden" name="embed" value="1" />
           <button type="submit">Join</button>
         </form>
-        <p class="signup-note" id="signup-note" hidden>Thanks — signup coming soon.</p>
+        <p class="signup-note" id="signup-note" role="status" aria-live="polite" hidden></p>
       </div>
     </div>
     <p class="copyright">© <span id="year">2026</span> House Tools · <a href="/kits/essentials/">Essentials</a></p>
   </footer>
 
-  <script src="/app.js?v=wk0"></script>
+  <script src="/app.js?v=wk1"></script>
 </body>
 </html>
