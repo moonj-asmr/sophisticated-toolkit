@@ -111,7 +111,7 @@ function renderTools() {
         <h2 class="card-name"><a href="/tools/${escapeAttr(tool.id || "")}/">${escapeHtml(tool.name)}</a></h2>
         <p class="card-blurb">${escapeHtml(tool.blurb)}</p>
         <div class="card-actions">
-          <a class="get-it" href="${escapeAttr(tool.buyUrl)}" target="_blank" rel="noopener noreferrer sponsored"
+          <a class="get-it" href="${escapeAttr(tool.buyUrl)}" target="_blank" rel="${escapeAttr(buyRel(tool.buyUrl))}"
              data-tool-id="${escapeAttr(tool.id || "")}"
              data-tool-name="${escapeAttr(tool.name || "")}"
              data-tool-brand="${escapeAttr(tool.brand || "")}">
@@ -134,6 +134,12 @@ function escapeHtml(str) {
 
 function escapeAttr(str) {
   return escapeHtml(str).replace(/'/g, "&#39;");
+}
+
+function buyRel(url) {
+  return /amazon\./i.test(String(url ?? ""))
+    ? "noopener noreferrer sponsored"
+    : "noopener noreferrer";
 }
 
 if (els.form) {

@@ -6,6 +6,16 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://myhousetools.com/kits/essentials/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myhousetools.com/disclosure/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://myhousetools.com/tools/fein-multimaster/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
