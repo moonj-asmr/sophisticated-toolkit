@@ -1,0 +1,16 @@
+{
+  "name": "Sophisticated Toolkit",
+  "install": "node scripts/build-pages.mjs && npx --yes serve --version",
+  "terminals": [
+    {
+      "name": "serve",
+      "command": "npx --yes serve . -l 3000"
+    }
+  ],
+  "ports": [
+    {
+      "name": "web server",
+      "port": 3000
+    }
+  ]
+}
