@@ -324,12 +324,40 @@ a { color: inherit; }
   font-weight: 500;
 }
 
+.footer-heading a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-heading a:hover {
+  opacity: 0.55;
+}
+
 .footer-col p {
   margin: 0;
   color: var(--muted);
   font-size: 0.9rem;
   line-height: 1.65;
   max-width: 28rem;
+}
+
+.footer-col a,
+.copyright a {
+  color: inherit;
+}
+
+.footer-col p a {
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+.copyright a {
+  text-decoration: none;
+}
+
+.copyright a:hover,
+.footer-col p a:hover {
+  opacity: 0.55;
 }
 
 .signup {
@@ -454,6 +482,37 @@ a { color: inherit; }
 .tool-actions {
   display: flex;
   align-items: center;
+}
+
+.prose-page {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 5rem;
+}
+
+.prose-page h1 {
+  margin: 0 0 1.25rem;
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(1.85rem, 4vw, 2.5rem);
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.prose-page p {
+  margin: 0 0 1.15rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.kit-title {
+  margin: 1.5rem 0 0;
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(1.65rem, 3.6vw, 2.15rem);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
 }
 
 @media (max-width: 700px) {

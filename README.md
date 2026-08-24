@@ -13,7 +13,7 @@ Quiet editorial static catalog of heirloom-grade home-improvement tools.
 
 ## Local development
 
-Run `npm start`. It rebuilds tool pages from `data/tools.json`, then serves on port 3000 or `$PORT`. Use `npm run build` to generate `tools/{id}/` and `sitemap.xml` without serving.
+Run `npm start`. It rebuilds tool pages from `data/tools.json`, then serves on port 3000 or `$PORT`. Use `npm run build` to generate `tools/{id}/`, `kits/essentials/`, and `sitemap.xml` without serving.
 
 ## Railway
 
