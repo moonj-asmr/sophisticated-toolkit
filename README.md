@@ -21,7 +21,9 @@ Connect this GitHub repo. The start script runs `npm run build` then serves the 
 
 ## Content
 
-Edit data/tools.json. Filter tags should match pills in app.js. Buy URLs are Amazon search placeholders.
+Edit `data/tools.json`, then run `npm run build`. Filter tags should match pills in `app.js`. Buy URLs are Amazon search placeholders.
+
+Homepage layout lives in `index.template.html`; `index.html` is generated with the catalog cards. Tool PDPs under `tools/` and `kits/essentials/` are also generated — do not edit them by hand.
 
 ## Stay in touch
 

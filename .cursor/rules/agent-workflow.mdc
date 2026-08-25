@@ -1,0 +1,36 @@
+---
+description: House Tools repo workflow for agents — keeps context small and edits in the right files
+alwaysApply: true
+---
+
+# House Tools — agent workflow
+
+Static catalog site. Tool content is data-driven; most HTML is generated at build time.
+
+## Edit these files
+
+| Task | Files |
+|------|-------|
+| Add or update a tool | `data/tools.json` |
+| Newsletter slug | `data/site.json` |
+| Homepage layout (header, filters shell, footer) | `index.template.html` |
+| Catalog UI / filters / signup JS | `app.js` |
+| Styles | `styles.css` |
+| Page generation logic | `scripts/build-pages.mjs` |
+
+## After changing JSON or templates
+
+Run `npm run build` (or `npm start`, which builds then serves).
+
+## Do not edit
+
+- `index.html` — generated from `index.template.html` + `data/tools.json`
+- `tools/*/index.html` — generated tool PDPs
+- `kits/essentials/index.html` — generated essentials kit page
+- `sitemap.xml` — generated
+
+## Adding a tool
+
+1. Add an entry to `data/tools.json` (`id` must be lowercase slug; `tags` must match filter pills in `app.js`).
+2. Run `npm run build`.
+3. Do not hand-edit generated HTML.
