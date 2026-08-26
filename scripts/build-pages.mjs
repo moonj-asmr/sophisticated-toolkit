@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 /**
- * Generate thin crawlable tool PDPs, the essentials kit page, and sitemap
- * from data/tools.json. Writes tools/{id}/index.html, kits/essentials/index.html,
- * and regenerates sitemap.xml.
+ * Generate the homepage catalog, thin crawlable tool PDPs, the essentials kit page,
+ * and sitemap from data/tools.json. Writes index.html (from index.template.html),
+ * tools/{id}/index.html, kits/essentials/index.html, and sitemap.xml.
  */
 import { mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
@@ -218,14 +218,13 @@ ${renderFooter(e.year, username)}
 `;
 }
 
-function renderKitCard(tool) {
+function renderCatalogCard(tool, { imageSrc }) {
   const brand = String(tool.brand ?? "");
   const name = String(tool.name ?? "");
   const origin = String(tool.origin ?? "");
   const blurb = String(tool.blurb ?? "");
   const id = String(tool.id ?? "");
   const buyUrl = String(tool.buyUrl ?? "");
-  const imageSrc = sitePath(tool.image);
   return `      <article class="card">
         <div class="card-image">
           <img src="${escapeAttr(imageSrc)}" alt="${escapeAttr(`${brand} ${name}`)}" loading="lazy" />
@@ -247,6 +246,15 @@ function renderKitCard(tool) {
           </div>
         </div>
       </article>`;
+}
+
+function renderHomeCard(tool) {
+  const image = String(tool.image ?? "").replace(/^\/+/, "");
+  return renderCatalogCard(tool, { imageSrc: image });
+}
+
+function renderKitCard(tool) {
+  return renderCatalogCard(tool, { imageSrc: sitePath(tool.image) });
 }
 
 function renderKitPage(essentials, username) {
@@ -308,6 +316,19 @@ ${body}
 `;
 }
 
+async function renderHomePage(tools, username) {
+  const templatePath = join(ROOT, "index.template.html");
+  const template = await readFile(templatePath, "utf8");
+  if (!template.includes("__CATALOG_CARDS__") || !template.includes("__BUTTONDOWN_ACTION__")) {
+    throw new Error("index.template.html is missing __CATALOG_CARDS__ or __BUTTONDOWN_ACTION__ markers");
+  }
+  const cards = tools.map(renderHomeCard).join("\n");
+  const html = template
+    .replace("__CATALOG_CARDS__", cards)
+    .replace("__BUTTONDOWN_ACTION__", escapeAttr(embedSubscribeUrl(username)));
+  await writeFile(join(ROOT, "index.html"), html, "utf8");
+}
+
 async function readButtondownUsername() {
   try {
     const raw = await readFile(join(ROOT, "data", "site.json"), "utf8");
@@ -348,8 +369,9 @@ async function main() {
   await writeFile(join(kitDir, "index.html"), renderKitPage(essentials, username), "utf8");
 
   await writeFile(join(ROOT, "sitemap.xml"), renderSitemap(ids), "utf8");
+  await renderHomePage(tools, username);
   console.log(
-    `Wrote ${ids.length} tool pages, kits/essentials/ (${essentials.length} tools), and sitemap.xml`
+    `Wrote index.html, ${ids.length} tool pages, kits/essentials/ (${essentials.length} tools), and sitemap.xml`
   );
 }
 
