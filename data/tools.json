@@ -532,5 +532,18 @@
     "blurb": "A stud finder with 13 sensors that shows the full width of the stud, not just a guess at the center. No calibration. Live-wire meter. Wood or metal.",
     "image": "images/Franklin_ProSensor_M210_green_studio_final.jpg",
     "buyUrl": "https://www.amazon.com/dp/B0DFS2MVMP?tag=myhousetools-20"
+  },
+  {
+    "id": "beurer-br60",
+    "name": "BiteX Original BR 60",
+    "brand": "Beurer",
+    "origin": "Germany",
+    "tags": [
+      "Light & Safety"
+    ],
+    "essential": false,
+    "blurb": "A German insect-bite healer that uses heat instead of cream. A ceramic plate reaches about 50°C and holds for three seconds on the sensitive program or six on the regular one. Two AAA batteries last about three hundred uses; the body is pocket-sized.",
+    "image": "images/Beurer_BR60_studio_final.jpg",
+    "buyUrl": "https://www.amazon.com/dp/B08MT4Z89C?tag=myhousetools-20"
   }
 ]
