@@ -101,6 +101,7 @@ function renderChromeHead({ title, description, canonical, ogImage }) {
   <title>${e.title}</title>
   <meta name="description" content="${e.description}" />
   <meta name="robots" content="index,follow" />
+  <meta name="p:domain_verify" content="6e6882086f3bf5dc16f7b65717a19b49"/>
   <link rel="canonical" href="${e.canonical}" />
   <meta property="og:title" content="${e.title}" />
   <meta property="og:description" content="${e.description}" />
