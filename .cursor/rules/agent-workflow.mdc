@@ -12,9 +12,8 @@ Static catalog site. Tool content is data-driven; most HTML is generated at buil
 | Task | Files |
 |------|-------|
 | Add or update a tool | `data/tools.json` |
-| Newsletter slug | `data/site.json` |
 | Homepage layout (header, filters shell, footer) | `index.template.html` |
-| Catalog UI / filters / signup JS | `app.js` |
+| Catalog UI / filters | `app.js` |
 | Styles | `styles.css` |
 | Page generation logic | `scripts/build-pages.mjs` |
 

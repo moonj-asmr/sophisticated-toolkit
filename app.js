@@ -21,8 +21,6 @@ const els = {
   grid: document.getElementById("tool-grid"),
   empty: document.getElementById("empty-state"),
   year: document.getElementById("year"),
-  form: document.getElementById("signup-form"),
-  note: document.getElementById("signup-note"),
 };
 
 if (els.year) els.year.textContent = String(new Date().getFullYear());
@@ -141,79 +139,6 @@ function buyRel(url) {
     ? "noopener noreferrer sponsored"
     : "noopener noreferrer";
 }
-
-const DEFAULT_BUTTONDOWN_USERNAME = "housetools";
-const SIGNUP_OK = "On the list.";
-const SIGNUP_ERR = "Could not add that address.";
-
-function embedSubscribeUrl(username) {
-  const slug = String(username || DEFAULT_BUTTONDOWN_USERNAME).trim() || DEFAULT_BUTTONDOWN_USERNAME;
-  return `https://buttondown.com/api/emails/embed-subscribe/${encodeURIComponent(slug)}`;
-}
-
-function showSignupNote(text, isError) {
-  if (!els.note) return;
-  els.note.hidden = false;
-  els.note.textContent = text;
-  els.note.classList.toggle("is-error", Boolean(isError));
-}
-
-function trackSubscribe() {
-  if (typeof gtag !== "function") return;
-  gtag("event", "subscribe", { method: "buttondown" });
-}
-
-async function loadSiteConfig() {
-  try {
-    const res = await fetch("/data/site.json");
-    if (!res.ok) return {};
-    const data = await res.json();
-    return data && typeof data === "object" ? data : {};
-  } catch {
-    return {};
-  }
-}
-
-function isSubscribeSuccess(res) {
-  return res.ok || res.status === 409;
-}
-
-async function bindSignup() {
-  if (!els.form) return;
-  const submitBtn = els.form.querySelector('button[type="submit"]');
-
-  els.form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    if (els.note) {
-      els.note.hidden = true;
-      els.note.classList.remove("is-error");
-    }
-    if (submitBtn) submitBtn.disabled = true;
-    els.form.setAttribute("aria-busy", "true");
-
-    try {
-      const res = await fetch(els.form.action, {
-        method: "POST",
-        body: new URLSearchParams(new FormData(els.form)),
-        headers: { Accept: "application/json, text/html" },
-      });
-      if (!isSubscribeSuccess(res)) throw new Error("subscribe failed");
-      els.form.hidden = true;
-      showSignupNote(SIGNUP_OK, false);
-      trackSubscribe();
-    } catch {
-      showSignupNote(SIGNUP_ERR, true);
-    } finally {
-      if (submitBtn) submitBtn.disabled = false;
-      els.form.removeAttribute("aria-busy");
-    }
-  });
-
-  const site = await loadSiteConfig();
-  els.form.action = embedSubscribeUrl(site.buttondownUsername);
-}
-
-bindSignup();
 
 function readEmbeddedTools() {
   const node = document.getElementById("tools-data");

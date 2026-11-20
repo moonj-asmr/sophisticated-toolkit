@@ -25,16 +25,6 @@ Edit `data/tools.json`, then run `npm run build`. Filter tags should match pills
 
 Homepage layout lives in `index.template.html`; `index.html` is generated with the catalog cards. Tool PDPs under `tools/` and `kits/essentials/` are also generated — do not edit them by hand.
 
-## Stay in touch
-
-The footer form collects addresses only. It does not send a welcome or newsletter from this site.
-
-It POSTs to Buttondown’s embed subscribe endpoint:
-
-`https://buttondown.com/api/emails/embed-subscribe/{username}`
-
-The username lives in one place: `data/site.json` → `buttondownUsername`. The default is `housetools` (House Tools brand slug). Change that field if the newsletter uses `myhousetools` or another slug. Generated pages pick it up on `npm run build`; the homepage form action is also updated at runtime from the same file.
-
 ## License
 
 Content and photography (c) Sophisticated Toolkit. All rights reserved.
